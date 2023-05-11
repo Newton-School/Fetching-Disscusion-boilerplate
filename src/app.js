@@ -16,7 +16,9 @@ Endpoint - /api/v1/discussions
 
 Return 200 Status code
 json = {
-  discussions: [
+  message: 'Discussions fetched successfully',
+  status: 'Success'
+  data: [
     {
       id: 1,
       heading: 'Binary Search',
