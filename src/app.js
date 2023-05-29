@@ -16,22 +16,23 @@ Endpoint - /api/v1/discussions
 
 Return 200 Status code
 json = {
-  message: 'Discussions fetched successfully',
-  status: 'Success'
-  data: [
-    {
-      id: 1,
-      heading: 'Binary Search',
-      body: 'How we can prove time complexity of BS is log(n) ?',
-      creator_id: 'xyz1'
-    },
-    {
-      id: 2,
-      heading: 'Binary Search',
-      body: 'Is BS a imp topic ?',
-      creator_id: 'xyz2'
-    }
-  ]
+  status: "Success",
+  message: "Discussion fetched successfully",
+  data: { discussions: [
+            {
+              id: 1,
+              heading: 'Binary Search',
+              body: 'How we can prove time complexity of BS is log(n) ?',
+              creator_id: 'xyz1'
+            },
+            {
+              id: 2,
+              heading: 'Binary Search',
+              body: 'Is BS a imp topic ?',
+              creator_id: 'xyz2'
+            }
+          ]
+      }
 }
 
 */
